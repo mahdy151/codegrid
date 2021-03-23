@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://saadatrugs.com/wp-content/themes/rehub-theme/js/gsap.min.js?ver=3.4.2"></script>
+    <script src="https://saadatrugs.com/wp-content/themes/rehub-theme/js/ScrollTrigger.min.js?ver=3.4.2"></script>
+    <script src="https://saadatrugs.com/wp-content/themes/rehub-theme/js/DrawSVGPlugin.min.js?ver=3.4.2"></script>
+
     <style>
         .inactive {
             opacity: 0.5;
@@ -23,21 +28,21 @@
 
     <script>
         document.querySelectorAll('ul li').forEach(item => {
-                    item.addEventListener('mouseenter', event => {
-                        Array.prototype.filter.call(item.parentNode.children, function (child) {
-                            if (child !== item) {
-                                child.classList.add("inactive");
-                            }
-                        })
-                    })
-                    item.addEventListener('mouseleave', event => {
-                        Array.prototype.filter.call(item.parentNode.children, function (child) {
-                            if (child !== item) {
-                                child.classList.remove("inactive");
-                            }
-                        })
-                    })
-                })    
+            item.addEventListener('mouseenter', event => {
+                Array.prototype.filter.call(item.parentNode.children, function (child) {
+                    if (child !== item) {
+                        child.classList.add("inactive");
+                    }
+                })
+            })
+            item.addEventListener('mouseleave', event => {
+                Array.prototype.filter.call(item.parentNode.children, function (child) {
+                    if (child !== item) {
+                        child.classList.remove("inactive");
+                    }
+                })
+            })
+        })
     </script>
 </body>
 
