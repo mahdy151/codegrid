@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inactive {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>hello</li>
+        <li>good bye</li>
+        <li>arrivederci</li>
+        <li>dude</li>
+        <li>whatever</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('ul li').forEach(item => {
+                    item.addEventListener('mouseenter', event => {
+                        Array.prototype.filter.call(item.parentNode.children, function (child) {
+                            if (child !== item) {
+                                child.classList.add("inactive");
+                            }
+                        })
+                    })
+                    item.addEventListener('mouseleave', event => {
+                        Array.prototype.filter.call(item.parentNode.children, function (child) {
+                            if (child !== item) {
+                                child.classList.remove("inactive");
+                            }
+                        })
+                    })
+                })    
+    </script>
+</body>
+
+</html>
