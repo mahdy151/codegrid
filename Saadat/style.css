@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: #111;
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+body>img {
+    margin-bottom: 20vh;
+}
+
+#my-scrollbar {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    z-index: 1;
+    font-size: 3em;
+    font-weight: 400;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform-origin: top left;
+}
+
+li {
+    font-size: 11.5vw;
+    margin: 30vh 0;
+    transform-origin: top left;
+
+}
+
+a {
+    color: #f8f7f1;
+    text-decoration: none;
+    transform-origin: top left;
+}
